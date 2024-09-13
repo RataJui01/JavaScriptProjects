@@ -48,3 +48,7 @@ button{
     text-transform: uppercase;
     font-size: 20px;
 }
+
+#bg-color{
+    background-color: #f63d3d;
+}
