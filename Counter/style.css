@@ -26,8 +26,7 @@ h1{
 }
 
 p{
-   font-size: 80px; 
-   color: #1bcc5b;
+   font-size: 80px; ;
 }
 
 .btns{
@@ -47,4 +46,12 @@ button{
 
 button:hover{
     background-color: #d672ff;
+}
+
+.positive{
+    color: #58da58;
+}
+
+.negative{
+    color: #ff3333;
 }
