@@ -10,6 +10,18 @@ increase.addEventListener('click', () => {
     counter.innerText = `${startNumber}`;
 })
 
+decrease.addEventListener('click', () => {
+    startNumber -= 1;
+    integerColor(startNumber);
+    counter.innerText = `${startNumber}`;
+})
+
+reset.addEventListener('click', () => {
+    startNumber = 0;
+    integerColor(startNumber);
+    counter.innerText = `${startNumber}`;
+})
+
 function integerColor(startNumber){
     if(startNumber > 0){
         counter.classList.add('positive');
