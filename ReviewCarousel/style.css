@@ -77,6 +77,7 @@ h1{
 i{
     font-size: 40px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .random-btn{
@@ -86,5 +87,12 @@ i{
     font-weight: 500;
     border-color: #1a78af;
     background-color: #c2e2f5;
+    cursor: pointer;
+    transition: all o.3s ease;
+}
+
+.random-btn:hover{
+    background-color: #175175;
+    color: #8dcaec;
 }
 
