@@ -78,6 +78,11 @@ i{
     font-size: 40px;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+i:hover{
+    color: #72afe9;
 }
 
 .random-btn{
