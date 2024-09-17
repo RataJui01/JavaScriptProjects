@@ -25,6 +25,7 @@
     padding: 50px 100px;
     background-color: #33264f;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .nav-logo h1{
@@ -73,6 +74,14 @@ button.menu{
     background-color: transparent;
     border: transparent;
     display: none;
+    font-size: 50px;
+    color: #b3a8dd;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+button.menu:hover{
+    color: #fff;
 }
 
 .toggle-btn i{
@@ -82,5 +91,56 @@ button.menu{
 }
 
 @media (max-width: 1100px){
-    
+    .nav-social a{
+        display: none;
+    }
+
+    button.menu{
+        display: contents;
+    }
+
+    .nav-links.active{
+        height: 220px;
+    }
+
+    .nav-links{
+        height: 0;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: start;
+        background-color: #33264f;
+        transition: all 0.5s ease;
+        padding-left: inherit;
+    }
+
+    .nav-links.active .links{
+        opacity: 1;
+    }
+
+    .links{
+        flex-direction: column;
+        gap: 20px;
+        opacity: 0;
+        align-items: start;
+    }
+
+    .links li{
+        border-left: 3px solid #9885cd;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 770px){
+    .nav-bar{
+        padding: 50px;
+    }
+
+    .nav-logo h1{
+        font-size: 30px;
+    }
+
 }
