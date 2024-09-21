@@ -15,18 +15,21 @@
 
 body{
     height: 100vh;
-    display: grid;
-    grid-template-columns: 2fr 5fr;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--bgcolor);
 }
 
 .sidebar{
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     padding: 40px 30px;
     background-color: #fff;
-    /* transform: translate(-100%); */
+    transform: translate(-100%);
+    transition: all 0.5s ease;
 }
 
 .logo-links .logo{
@@ -126,15 +129,15 @@ body{
 
 .toggle-btn{
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-content: center;
 }
 
 button.toggle{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -156,6 +159,15 @@ button.toggle i{
     transform: translate(0);
 }
 
+.hide-mainContent{
+    display: none;
+}
+
+/* .close-sidebar{
+    transform: translate(-100%);
+
+} */
+
 
 /* @media  (max-width: 1100px){
     body{
@@ -163,16 +175,14 @@ button.toggle i{
     }
 } */
 
-@media  (max-width: 676px){
-    body{
-        grid-template-columns: 100% 1fr;
+@media  (min-width: 676px){
+    .sidebar{
+        width: 400px;
     }
-
-    /* .main-content{
-        transform: translate(-1000%);
-    } */
-
-    /* .sidebar{
-        transform: translate(-100%);
-    } */
 }
+
+/* @media  (max-width: 676px){
+    .main-content{
+        display: none;
+    }
+} */
