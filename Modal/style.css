@@ -6,3 +6,109 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.before-click-container{
+    min-height: 100vh;
+    background: url(./assets/hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.before-click-content{
+    width: 90vw;
+    max-width: 620px;
+    background-color: #fff;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+button.open-modal{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #77a4e3;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.open-modal:hover{
+    border-color: #2e407a;
+}
+
+.Modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.show-modal{
+    visibility: visible;
+    z-index: 10;
+}
+
+.Modal-container{
+    position: relative;
+    width: 90vw;
+    max-width: 620px;
+    background-color: #fff;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+button.close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px;
+    border: transparent;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+button.close-btn:hover{
+    background-color: #e7e7e7
+}
+
+button.close-btn i{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fb3838;
+}
