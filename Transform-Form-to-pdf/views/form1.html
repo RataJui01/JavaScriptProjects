@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/form1.css">
+    <title>Form1</title>
+</head>
+<body>
+    <h1>คำร้องทั่วไป</h1>
+    <h3>คณะวิทยาศาสตร์เเละเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</h3>
+    <div class="studentFillIn">
+        <div class="dateContainer">
+            <label for="date">วันที่</label>
+            <select name="date" id="date">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+                <option value="1">13</option>
+                <option value="1">14</option>
+                <option value="1">15</option>
+                <option value="1">16</option>
+                <option value="1">17</option>
+                <option value="1">18</option>
+                <option value="1">19</option>
+                <option value="1">20</option>
+                <option value="1">21</option>
+                <option value="1">22</option>
+                <option value="1">23</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+            </select>
+
+            <label for="month">เดือน</label>
+            <select name="month" id="month">
+                <option value="มกราคม">มกราคม</option>
+                <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                <option value="มีนาคม">มีนาคม</option>
+                <option value="เมษายน">เมษายน</option>
+                <option value="พฤษภาคม">พฤษภาคม</option>
+                <option value="มิถุนายน">มิถุนายน</option>
+                <option value="กรกฎาคม">กรกฎาคม</option>
+                <option value="สิงหาคม">สิงหาคม</option>
+                <option value="กันยายน">กันยายน</option>
+                <option value="ตุลาคม">ตุลาคม</option>
+                <option value="พฤศจิกายน">พฤศจิกายน</option>
+                <option value="ธันวาคม">ธันวาคม</option>
+            </select>
+
+            <label for="year">พ.ศ.</label><span> 2567</span>
+        </div>
+
+        <label for="topic">เรื่อง</label><input type="text" class="subject">
+        <p class="dearDean"><span>เรียน </span>คณะบดีคณะวิทยาศาสตร์เเละเทคโนโลยี</p>
+
+        <div class="studentInfo">
+            <div class="studentInfoLine1">
+                <label for="prefix">ข้าพเจ้า</label>
+                    <select name="prefix" id="prefix">
+                        <option value="นาย">นาย</option>
+                        <option value="นาง">นาง</option>
+                        <option value="นางสาว">นางสาว</option>
+                    </select>
+                <input type="text" name="fullName" id="fullname">
+                <label for="studentId">เลขทะเบียน</label>
+                <input type="text" name="studentId" id="studentId">
+            </div>
+            
+            <div class="studentInfoLine2">
+                <label for="studentYear">ชั้นปีที่</label>
+                <select name="studentYear" id="studentYear">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="major">สาขาวิชา</label>
+                <input type="text" name="major" id="major">
+            </div>
+
+            <div class="studentInfoLine3">
+                <label for="address">ที่อยู่ที่สามารถติดต่อได้ทางไปรษณีย์</label>
+                <label for="houseNumber">บ้านเลขที่</label>
+                <input type="text" name="houseNumber" id="houseNumber">
+
+                <label for="moo">หมู่ที่</label>
+                <input type="text" name="moo" id="moo">
+
+                <label for="SubDistrict">ตำบล</label>
+                <input type="text" name="SubDistrict" id="SubDistrict">
+
+                <label for="district">อำเภอ</label>
+                <input type="text" name="district" id="district">
+            </div>
+
+            <div class="studentInfoLine4">
+                <label for="province">จังหวัด</label>
+                <input type="text" name="province" id="province">
+
+                <label for="postalCode">รหัสไปรษณีย์</label>
+                <input type="text" name="postalCode" id="postalCode">
+
+                <label for="phoneNumber">โทรศัพท์มือถือ</label>
+                <input type="text" name="phoneNumber" id="phoneNumber">
+
+                <label for="landline">โทรศัพท์บ้าน(ถ้ามี)</label>
+                <input type="text" name="landline" id="landline">
+            </div>
+
+            <div class="studentInfoLine5">
+                <label for="advisor">อาจารย์ที่ปรึกษา</label>
+                <input type="text" name="advisor" id="advisor">
+            </div>
+        </div>
+
+        <div class="requestPurpose">
+            <h5>มีความประสงค์ที่จะยื่นคำร้องเรื่อง</h5>
+            <div class="resignContainer">
+                <div class="resignLine1">
+                    <input type="checkbox" name="resign" id="resign">
+                    <label for="resign">ขอลาออก</label>
+
+                    <label for="semester">ในภาคเรียนที่</label>
+                    <input type="text" name="semester" id="semester">
+
+                    <label for="ปีการศึกษา">ปีการศึกษา</label>
+                    <input type="text" name="ปีการศึกษา" id="ปีการศึกษา">
+                </div>
+
+                <div class="resignLine2">
+                    <p>เหตุผล เพราะ</p>
+                    <input type="checkbox" name="ศึกษาต่อที่ธรรมศาสตร์" id="ศึกษาต่อที่ธรรมศาสตร์">
+                    <label for="facultyInTu">ศึกษาต่อที่ ม.ธรรมศาสตร์ คณะ</label>
+                    <input type="text" name="facultyInTu" id="facultyInTu">
+
+                    <label for="majorInTu">สาขา</label>
+                    <input type="text" name="majorInTu" id="majorInTu">
+                </div>
+                
+                <div class="resignLine3">
+                    <input type="checkbox" name="ศึกษาต่อที่มหาลัยอื่น" id="ศึกษาต่อที่มหาลัยอื่น">
+                    <p>ศึกษาต่อที่มหาวิทยาลัยอื่น คือ มหาลัย</p>
+                    <input type="text" name="otherUni" id="otherUni">
+
+                    <label for="otherUniFaculty">คณะ</label>
+                    <input type="text" name="otherUniFaculty" id="otherUniFaculty">
+
+                    <label for="otherUniMajor">สาขา</label>
+                    <input type="text" name="otherUniMajor" id="otherUniMajor">
+                </div>
+
+                <div class="resignLine4">
+                    <p><span>กรณีลาออก</span> 1. มีหนี้ค้างกับ มธ. /หน่วยงานภายใน มธ. หรือไม่ ถ้ามีโปรดระบุ</p>
+                    <input type="text" name="outStandingDebt" id="outStandingDebt">
+                </div>
+
+                <div class="resignLine5">
+                    <p>2. ต้องการเกรดในภาคเรียนที่ยื่นคำร้องลาออกหรือไม่</p>
+                    <input type="checkbox" name="wantGrade" id="wantGrade">
+                    <label for="wantGrade">ต้องการ</label>
+
+                    <input type="checkbox" name="doNotWantGrade" id="doNotWantGrade">
+                    <label for="doNotWantGrade">ไม่ต้องการ</label>
+                </div>
+            </div>
+
+            <div class="relaxationOfRegistrationFees">
+                <div class="RegistrationFeesLine1">
+                    <input type="checkbox" name="ขอผ่อนผันค่าจดทะเบียน" id="ขอผ่อนผันค่าจดทะเบียน">
+                    <label for="ขอผ่อนผันค่าจดทะเบียน">ขอผ่อนผันค่าจดทะเบียน</label>
+
+                    <label for="RegistrationFeesSemester">ในภาคเรียนที่</label>
+                    <input type="text" name="RegistrationFeesSemester" id="RegistrationFeesSemester">
+
+                    <label for="ปีการศึกษา">ปีการศึกษา</label>
+                    <input type="text" name="ปีการศึกษา" id="ปีการศึกษาผ่อนผัน">
+
+                    <label for="relaxMonth">คาดว่าจะสามารถชำระเงินได้ภายในเดือน</label>
+                    <select name="month" id="relaxMonth">
+                        <option value="มกราคม">มกราคม</option>
+                        <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                        <option value="มีนาคม">มีนาคม</option>
+                        <option value="เมษายน">เมษายน</option>
+                        <option value="พฤษภาคม">พฤษภาคม</option>
+                        <option value="มิถุนายน">มิถุนายน</option>
+                        <option value="กรกฎาคม">กรกฎาคม</option>
+                        <option value="สิงหาคม">สิงหาคม</option>
+                        <option value="กันยายน">กันยายน</option>
+                        <option value="ตุลาคม">ตุลาคม</option>
+                        <option value="พฤศจิกายน">พฤศจิกายน</option>
+                        <option value="ธันวาคม">ธันวาคม</option>
+                    </select>
+
+                    <label for="year">พ.ศ.</label><span> 2567</span><br>
+                    <p>(ทั้งนี้ต้องไม่มีหนี้ค้างชำระค่าจดทะเบียนในภาคเรียนก่อนหน้า)</p>
+                </div>
+
+                <div class="other">
+                    <div class="otherHeader">
+                        <input type="checkbox" name="other" id="other">
+                        <label for="otherPurpose">อื่นๆ (โปรดระบุ)</label>
+                    </div>
+                    <textarea name="otherInput" id="otherInput"></textarea>
+                    <div class="otherReason">
+                        <label for="otherReason">เหตุผลเพราะ</label>
+                    </div>
+                    <textarea name="otherReason" id="otherReason"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <p class="thankYouText">
+            จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติเเละดำเนินการต่อไปด้วย จักขอบพระคุณอย่างยิ่ง
+        </p>
+
+        <div class="studentSignature">
+            <p class="studentSignName">ลงชื่อ</p>
+            <input type="text" name="studentSignatureInput" id="studentSignatureInput">
+            <p class="studentSignatureEnd">นักศึกษา</p>
+        </div>
+
+        <div class="opinion">
+            <div class="advisorOpinion">
+                <p class="advisorOpinionLabel">
+                    ความเห็นอาจารย์ที่ปรึกษา
+                </p>
+                <textarea name="advisorOpinionText" id="advisorOpinionText"></textarea>
+                <div class="advisorSignature">
+                    <p class="advisorSignName">ลงชื่อ</p>
+                    <input type="text" name="advisorSignatureInput" id="advisorSignatureInput">
+                    <p class="advisorOpinionDate">วันที่</p>
+                    <input type="date" name="advisorOpinionDateInput" id="advisorOpinionDateInput">
+                </div>
+            </div>
+
+            <div class="facultyStaffOpinion">
+                <p class="facultyStaffOpinionLabel">
+                    ความเห็นเจ้าหน้าที่คณะฯ
+                </p>
+                <textarea name="facultyStaffOpinionText" id="facultyStaffOpnionText"></textarea>
+                <div class="facultyStaffSignature">
+                    <p class="facultyStaffSignName">ลงชื่อ</p>
+                    <input type="text" name="facultyStaffSignatureInput" id="facultyStaffSignatureInput">
+                    <p class="facultyStaffOpinionDate">วันที่</p>
+                    <input type="date" name="facultyStaffOpinionDateInput" id="facultyStaffOpinionDateInput">
+                </div>
+            </div>
+
+            <div class="lecturerOpinion">
+                <p class="lecturerOpinionLabel">
+                    ความเห็นอาจารย์ผู้สอน/หัวหน้าสาขา
+                </p>
+                <textarea name="lecturerOpinionText" id="lecturerOpnionText"></textarea>
+                <div class="lecturerSignature">
+                    <p class="lecturerSignName">ลงชื่อ</p>
+                    <input type="text" name="lecturerSignatureInput" id="lecturerSignatureInput">
+                    <p class="lecturerOpinionDate">วันที่</p>
+                    <input type="date" name="lecturerOpinionDateInput" id="lecturerOpinionDateInput">
+                </div>
+            </div>
+
+            <div class="deanOpinion">
+                <p class="deanOpinionLabel">
+                    ความเห็นคณบดี
+                </p>
+                <div class="approve">
+                    <input type="checkbox" name="approveCheckbox" id="approveCheckbox">
+                    <label for="aprroveLabel">อนุมัติ</label>
+                    <input type="text" name="approveReason" id="approveReason">
+                </div>
+                <div class="reject">
+                    <input type="checkbox" name="rejectCheckbox" id="rejectCheckbox">
+                    <label for="rejectLabel">ไม่อนุมัติ</label>
+                    <input type="text" name="rejectReason" id="rejectReason">
+                </div>
+                <div class="proceedAsProposed">
+                    <p class="proceedAsProposedLabel">ดำเนินการตามเสนอ</p>
+                    <input type="checkbox" name="proceedAsProposedCheckbox" id="proceedAsProposedCheckbox">
+                    <label class="proceedAsProposedLabel">ดำเนินการตามเสนอ</label>
+                    <textarea name="proceedAsProposedText" id="proceedAsProposedText"></textarea>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

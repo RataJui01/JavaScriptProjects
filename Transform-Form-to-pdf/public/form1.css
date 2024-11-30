@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sarabun",sans-serif;
+}
+
+:root{
+    --gapBetweenLine: 6px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+h3{
+    text-align: center;
+}
+
+.studentFillIn{
+    /* border: 1px solid #000; */
+    margin: 20px 50px;
+}
+
+.dateContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#date{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#month{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label[for=topic]{
+    font-weight: 600;
+    margin-right: 8px
+}
+
+input[type=text].subject{
+    width: 300px;
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.dearDean span{
+    font-weight: 600;
+}
+
+.dearDean{
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.studentInfoLine1{
+    display: flex;
+    justify-content: end;
+    margin-bottom: var(--gapBetweenLine);
+    gap: 6px;
+}
+
+input[name=studentId]{
+    flex-grow: 0.5;
+    width: auto;
+}
+
+input[name=fullName]{
+    width: 800px;
+}
+
+.studentInfoLine2{
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--gapBetweenLine);
+    gap: 6px;
+}
+
+select[name=studentYear]{
+    width: 5%;
+}
+
+input[name=major]{
+    flex-grow: 1;
+}
+
+.studentInfoLine3{
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--gapBetweenLine);
+    gap: 6px;
+}
+
+input[name=district]{
+    flex-grow: 1;
+}
+
+.studentInfoLine4{
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--gapBetweenLine);
+    gap: 6px;
+}
+
+input[name=landline]{
+    flex-grow: 1;
+}
+
+.studentInfoLine5{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 6px;
+}
+
+input[name=advisor]{
+    flex:0.5;
+}
+
+.requestPurpose{
+    margin-bottom: 30px;
+}
+
+.requestPurpose h5{
+    font-size: 16px;
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.resignLine1{
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.resignLine2{
+    display: flex;
+    gap: 6px;
+    margin-left: 22px;
+    margin-bottom: var(--gapBetweenLine);
+}
+
+input[name=facultyInTu]{
+    width: 500px;
+}
+
+input[name=majorInTu]{
+    flex: 1;
+}
+
+.resignLine3{
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--gapBetweenLine);
+    margin-left: 116px;
+}
+
+input[name=otherUni], input[name=otherUniFaculty]{
+    width: 300px;
+}
+
+input[name=otherUniMajor]{
+    flex: 1;
+}
+
+.resignLine4{
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--gapBetweenLine);
+    margin-left: 22px;
+}
+
+.resignLine4 span{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+input[name=outStandingDebt]{
+    flex: 1;
+}
+
+.resignLine5{
+    display: flex;
+    gap: 6px;
+    margin-bottom: var(--gapBetweenLine);
+    margin-left: 102px;
+}
+
+.RegistrationFeesLine1{
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.otherHeader{
+    margin-bottom: var(--gapBetweenLine);
+}
+
+textarea#otherInput{
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.otherReason{
+    margin-bottom: var(--gapBetweenLine);
+}
+
+textarea#otherReason{
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+p.thankYouText{
+    text-align: center;
+    margin-bottom: var(--gapBetweenLine);
+}
+
+.studentSignature{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
