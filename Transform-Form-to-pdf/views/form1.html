@@ -234,7 +234,9 @@
             <input type="text" name="studentSignatureInput" id="studentSignatureInput">
             <p class="studentSignatureEnd">นักศึกษา</p>
         </div>
-
+    </div>
+    
+    <div class="staffFillIn">
         <div class="opinion">
             <div class="advisorOpinion">
                 <p class="advisorOpinionLabel">
@@ -290,13 +292,19 @@
                     <input type="text" name="rejectReason" id="rejectReason">
                 </div>
                 <div class="proceedAsProposed">
-                    <p class="proceedAsProposedLabel">ดำเนินการตามเสนอ</p>
-                    <input type="checkbox" name="proceedAsProposedCheckbox" id="proceedAsProposedCheckbox">
-                    <label class="proceedAsProposedLabel">ดำเนินการตามเสนอ</label>
+                    <div class="proceedAsProposedHeader">
+                        <input type="checkbox" name="proceedAsProposedCheckbox" id="proceedAsProposedCheckbox">
+                        <label class="proceedAsProposedLabel">ดำเนินการตามเสนอ</label>
+                    </div>
                     <textarea name="proceedAsProposedText" id="proceedAsProposedText"></textarea>
                 </div>
+                <div class="deanSignature">
+                    <p class="deanSignName">ลงชื่อ</p>
+                    <input type="text" name="deanSignatureInput" id="deanSignatureInput">
+                    <p class="deanOpinionDate">วันที่</p>
+                    <input type="date" name="deanOpinionDateInput" id="deanOpinionDateInput">
+                </div>
             </div>
-            
         </div>
     </div>
 </body>

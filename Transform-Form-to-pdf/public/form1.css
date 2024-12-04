@@ -20,7 +20,11 @@ h3{
     text-align: center;
 }
 
-.studentFillIn{
+input[type=text]{
+    padding: 0 5px 0 5px;
+}
+
+.studentFillIn, .staffFillIn{
     /* border: 1px solid #000; */
     margin: 20px 50px;
 }
@@ -43,12 +47,13 @@ h3{
 
 label[for=topic]{
     font-weight: 600;
-    margin-right: 8px
+    margin-right: 8px;
 }
 
 input[type=text].subject{
     width: 300px;
     margin-bottom: var(--gapBetweenLine);
+    padding-left: 5px;
 }
 
 .dearDean span{
@@ -226,4 +231,80 @@ p.thankYouText{
     display: flex;
     gap: 6px;
     justify-content: center;
+}
+
+.opinion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #000;
+}
+
+.advisorOpinion, .facultyStaffOpinion, .lecturerOpinion, .deanOpinion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.advisorOpinion{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.facultyStaffOpinion{
+    border-bottom: 1px solid #000;
+}
+
+.lecturerOpinion{
+    border-right: 1px solid #000;
+}
+
+p.advisorOpinionLabel, p.facultyStaffOpinionLabel, p.lecturerOpinionLabel, p.deanOpinionLabel{
+    margin-bottom: 10px;
+}
+
+textarea#advisorOpinionText, textarea#facultyStaffOpnionText, textarea#lecturerOpnionText{
+    width: 100%;
+    border-radius: 8px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.advisorSignature, .facultyStaffSignature, .lecturerSignature, .deanSignature{
+    display: flex;
+    gap: 6px;
+}
+
+.approve, .reject{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.approve input[name=approveReason], .reject input[name=rejectReason]{
+    flex: 1;
+    border-radius: 3px;
+    height: 30px;
+    padding: 5px;
+}
+
+.proceedAsProposed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+textarea#proceedAsProposedText{
+    border-radius: 3px;
+    height: 60px;
+    padding: 5px;
 }
