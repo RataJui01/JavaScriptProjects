@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/savefile.css" />
+    <title>Save & Send</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="saveFile">
+        <p class="yourFile">filename.pdf</p>
+        <button class="download"><i class="bx bx-download"></i></button>
+      </div>
+
+      <div class="emailSending">
+        <div class="senderContainer">
+          <p class="from">from :</p>
+          <input type="email" name="senderEmail" id="senderEmail" />
+        </div>
+
+        <div class="receiverContainer">
+          <p class="to">to :</p>
+          <input type="email" name="receiverEmail" id="receiverEmail" />
+        </div>
+
+        <div class="subjectContainer">
+          <p class="subject">Subject :</p>
+          <input type="text" name="SubjectInput" id="SubjectInput" />
+        </div>
+
+        <div class="attachmentContainer">
+          <p class="attachment">Attachment :</p>
+          <input type="file" name="attachmentInput" id="attachmentInput" />
+        </div>
+      </div>
+
+      <div class="sendEmail">
+        <button class="SendEmailBtn">Send email</button>
+      </div>
+    </div>
+
+    <script src="../public/savefile.js"></script>
+  </body>
+</html>
