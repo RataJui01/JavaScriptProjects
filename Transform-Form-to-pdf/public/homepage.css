@@ -1,77 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Sarabun", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sarabun", sans-serif;
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #17153B;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17153b;
 }
 
-.chooseFormContainer h1{
-    text-transform: uppercase;
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 70px;
+.chooseFormContainer h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 70px;
 }
 
-.chooseFormContent{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+.chooseFormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.form1, .form2, .form3{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #C8ACD6;
-    border-radius: 25px;
-    padding: 25px 15px;
-    align-items: center;
+.form1,
+.form2,
+.form3 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #c8acd6;
+  border-radius: 25px;
+  padding: 25px 15px;
+  align-items: center;
 }
 
-.form1 p, .form2 p, .form3 p{
-    font-size: 20px;
-    color: #fff;
-    margin-left: 20px;
+.form1 p,
+.form2 p,
+.form3 p {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 20px;
 }
 
-.fillIn{
-    padding: 8px 3px;
-    font-size: 20px;
-    width: 30%;
-    border-radius: 8px;
-    border: transparent;
-    background-color: #FFD369;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.fillIn1,
+.fillIn2,
+.fillIn3 {
+  padding: 8px 3px;
+  font-size: 20px;
+  width: 30%;
+  border-radius: 8px;
+  border: transparent;
+  background-color: #ffd369;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.fillIn:hover{
-    background-color: #D6A42C;
-    border: transparent;
+.fillIn1:hover,
+.fillIn2:hover,
+.fillIn3:hover {
+  background-color: #d6a42c;
+  border: transparent;
 }
 
 @media (max-width: 600px) {
-    .chooseFormContainer h1{
-        font-size: 35px;
-    }
+  .chooseFormContainer h1 {
+    font-size: 35px;
+  }
 
-    .form1 p, .form2 p, .form3 p{
-        font-size: 18px;
-    }
+  .form1 p,
+  .form2 p,
+  .form3 p {
+    font-size: 18px;
+  }
 
-    .fillIn{
-        font-size: 18px;
-    }
+  .fillIn {
+    font-size: 18px;
+  }
 }
